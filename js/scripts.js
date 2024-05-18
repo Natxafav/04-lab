@@ -1,9 +1,8 @@
-const menuToggle = document.getElementById("menu-toggle");
-const menuNav = document.getElementById("menu-nav");
+document.addEventListener("DOMContentLoaded", function() {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menuNav = document.getElementById("menu-nav");
 
-const toggleMenu = () => {
-  console.log("called toggleMenu")
-  menuNav.classList.toggle("menu-toggle");
-}
-
-menuToggle.addEventListener("click", toggleMenu);
+  menuToggle.addEventListener("click", function() {
+    menuNav.classList.toggle("menu-toggle");
+  });
+});

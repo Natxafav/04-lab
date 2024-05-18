@@ -1,8 +1,7 @@
 /* MOBILE AND GLOBAL STYLES */
 
-/* applies to screens smaller than 500px (first breakpoint) */
+/* Applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
-
 body {
   background: #fcc;
   margin: 0;
@@ -28,9 +27,7 @@ nav a {
   text-align: center;
   color: #fff;
   line-height: 2em;
-}
-.menu-toggle {
-  display: flex;
+  cursor: pointer;
 }
 
 /* comment in for CSS-only solution: */
@@ -39,14 +36,9 @@ nav:hover {
   display: flex;
 } */
 
-
-
 /* TABLET STYLES */
-
 @media screen and (min-width: 500px) {
-
-  /* applies to screens wider than 499px */
-  
+  /* Applies to screens wider than 499px */
   body {
     background: #cfc;
   }
@@ -57,23 +49,22 @@ nav:hover {
     display: flex;
     flex-direction: row;
   }
-  /* just change the menu colours on hover above mobile widths */
+  /* Change the menu colours on hover above mobile widths */
   nav a:hover {
     color: #dfd;
     background: #797;
   }
-
 }
 
-
-
 /* DESKTOP STYLES */
-
 @media screen and (min-width: 1000px) {
-
-  /* applies to screens wider than 999px */
-
+  /* Applies to screens wider than 999px */
   body {
     background: #ccf;
   } 
+}
+
+/* Styles for toggled menu */
+.menu-toggle {
+  display: flex;
 }
